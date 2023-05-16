@@ -3,6 +3,7 @@ package com.example.kolokolnikov_android_studio_second_course
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 
 class Activity_pr_1 : AppCompatActivity() {
     var msgOnStart = true
@@ -10,7 +11,7 @@ class Activity_pr_1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_pr1)
         Log.d("pr_1", "onCreate")
     }
 
@@ -24,7 +25,6 @@ class Activity_pr_1 : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-
         if (this.msgOnResume) {
             Log.d("pr_1", "onResume")
             this.msgOnResume = false
@@ -50,6 +50,10 @@ class Activity_pr_1 : AppCompatActivity() {
         super.onRestart()
         Log.d("pr_1", "(onRestart)")
         Log.d("pr_1", "App is running")
+    }
+
+    fun closeActivityPr1(view: View) {
+        this.finish()
     }
 
 }

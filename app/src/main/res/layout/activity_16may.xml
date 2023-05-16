@@ -7,13 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView_activity_pr1"
+        android:id="@+id/textView_activity16may"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="
-                            activity_pr1\n
-        Можно смотреть логи, идущие\n
-по жизненному циклу этой активности."
+        android:text="Пусто."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,15 +19,27 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:id="@+id/buttonFromActivityPr1"
+        android:id="@+id/buttonFromActivity16may"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="236dp"
-        android:onClick="closeActivityPr1"
+        android:onClick="closeActivity16may"
         android:text="Назад"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDoActivity16may"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="400dp"
+        android:onClick="doActivity16may"
+        android:text="Кнопка"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
