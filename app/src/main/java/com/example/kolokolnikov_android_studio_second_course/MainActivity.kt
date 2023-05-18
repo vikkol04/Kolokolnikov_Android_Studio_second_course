@@ -8,7 +8,6 @@ import com.example.kolokolnikov_android_studio_second_course.databinding.Activit
 
 
 class MainActivity : AppCompatActivity() {
-    lateinit var bindingClass: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,6 +17,12 @@ class MainActivity : AppCompatActivity() {
         // 15.05.2023
         val intentPr1 = Intent(this, Activity_pr_1::class.java)
         startActivity(intentPr1)
+    }
+
+    fun startActivityPr2(view: View) {
+        //18.05.2023
+        val intentPr2 = Intent(this, Activity_pr_2::class.java)
+        startActivity(intentPr2)
     }
 
     fun startActivity16May(view: View) {
