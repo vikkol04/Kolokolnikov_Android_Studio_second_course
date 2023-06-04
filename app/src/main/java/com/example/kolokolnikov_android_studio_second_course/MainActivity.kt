@@ -3,14 +3,30 @@ package com.example.kolokolnikov_android_studio_second_course
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.kolokolnikov_android_studio_second_course.constance_28may.Сonstance28May
 import com.example.kolokolnikov_android_studio_second_course.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+    lateinit var bindingMain: ActivityMainBinding
+    private var launcher: ActivityResultLauncher<Intent>? = null    //Для Activity_28may
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        bindingMain = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(bindingMain.root)
+
+        //Для Activity_28may
+        launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            result: ActivityResult ->
+            if (result.resultCode == RESULT_OK){
+                bindingMain.arrivalAnswer.text = result.data?.getStringExtra(Сonstance28May.INTENT_ANSWER)
+            }
+        }
     }
 
     fun startActivityPr1(view: View) {
@@ -29,5 +45,18 @@ class MainActivity : AppCompatActivity() {
         // 16.05.2023
         val intent16May = Intent(this, Activity_16may::class.java)
         startActivity(intent16May)
+    }
+
+    fun startActivity28May(view: View) {
+        // 01.06.2023
+        val intent28May = Intent(this, Activity_28may::class.java)
+        intent28May.putExtra(Сonstance28May.INTENT_QUESTION, bindingMain.questionField.text.toString())
+        launcher?.launch(intent28May)
+    }
+
+    fun startActivity30May(view: View) {
+        // 03.06.2023
+        val intent30May = Intent(this, Activity_30may::class.java)
+        startActivity(intent30May)
     }
 }
