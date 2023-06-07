@@ -41,6 +41,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentPr2)
     }
 
+    fun startActivityPr3(view: View) {
+        //06.06.2023
+        val intentPr3 = Intent(this, Activity_pr_3::class.java)
+        startActivity(intentPr3)
+    }
+
     fun startActivity16May(view: View) {
         // 16.05.2023
         val intent16May = Intent(this, Activity_16may::class.java)
