@@ -46,7 +46,6 @@ class ColorSpinnerAdapter_pr_3 (context: Context, list: List<ColorObject_pr_3>)
         val colorHexItem = view.findViewById<TextView>(R.id.colorHex)
         val colorNameBG = view.findViewById<TextView>(R.id.colorNameBG)
         val colorBlob = view.findViewById<View>(R.id.colorBlob)
-        val colorTvColor = view.findViewById<TextView>(R.id.tvColor)
 
         colorNameBG?.text = colorObject.name
         colorNameBG?.setTextColor(Color.parseColor(colorObject.contrastHexHash))
@@ -55,10 +54,6 @@ class ColorSpinnerAdapter_pr_3 (context: Context, list: List<ColorObject_pr_3>)
         colorHexItem?.text = colorObject.hex
 
         colorBlob?.background?.setTint(Color.parseColor(colorObject.hexHash))
-
-        //colorTvColor.ContextCompat.getColor(this, R.color.)
-        colorTvColor.setTextColor((Color.parseColor("#FBB117")))
-
 
         return view
     }

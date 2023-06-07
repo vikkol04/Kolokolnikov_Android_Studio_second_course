@@ -21,7 +21,7 @@
             android:layout_marginStart="20dp"
             android:gravity="center"
             android:text="Цвет:"
-            android:textColor="@color/black"
+            android:textColor="#808080"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -34,7 +34,7 @@
             android:textAlignment="center"
             android:gravity="center"
             android:spinnerMode="dropdown"
-            android:background="@drawable/color_blob_pr_3"
+            android:background="@drawable/color_const_blob_pr_3"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"/>
 

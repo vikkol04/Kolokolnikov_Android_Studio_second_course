@@ -20,6 +20,8 @@ class Activity_pr_3 : AppCompatActivity() {
         //binding.tvColor.setTextColor((Color.parseColor("#FBB117")))
 
         loadColorSpinner()
+
+
     }
 
     private fun loadColorSpinner() {
@@ -31,6 +33,7 @@ class Activity_pr_3 : AppCompatActivity() {
             onItemSelectedListener = object: AdapterView.OnItemSelectedListener{
                 override fun onItemSelected(p0: AdapterView<*>?, p1: View?, position: Int, p3: Long){
                     selectedColor = ColorList_pr_3().basicColors()[position]
+                    binding.tvColor.setTextColor(Color.parseColor(selectedColor.hexHash))
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>?) {
