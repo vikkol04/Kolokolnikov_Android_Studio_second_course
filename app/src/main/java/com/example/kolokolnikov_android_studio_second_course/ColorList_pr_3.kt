@@ -21,12 +21,12 @@ class ColorList_pr_3 {
             ColorObject_pr_3("Красный", "FF0000", whiteHex),
             ColorObject_pr_3("Розовый", "FF00FF", whiteHex),
             ColorObject_pr_3("Зелёный", "008000", whiteHex),
-            ColorObject_pr_3("Лаймовый", "00FF00", whiteHex),
+            ColorObject_pr_3("Лаймовый", "00FF00", blackHex),
             ColorObject_pr_3("Оливковый", "808000", whiteHex),
-            ColorObject_pr_3("Жёлтый", "FFFF00", whiteHex),
+            ColorObject_pr_3("Жёлтый", "FFFF00", blackHex),
             ColorObject_pr_3("Синий", "0000FF", whiteHex),
             ColorObject_pr_3("Бирюзовый", "008080", whiteHex),
-            ColorObject_pr_3("Морской", "00FFFF", whiteHex))
+            ColorObject_pr_3("Морской", "00FFFF", blackHex))
     }
 
 }
