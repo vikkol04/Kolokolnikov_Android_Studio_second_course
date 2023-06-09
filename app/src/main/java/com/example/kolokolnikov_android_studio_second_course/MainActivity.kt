@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /*
     fun startActivityPr1(view: View) {
         // 15.05.2023
         val intentPr1 = Intent(this, Activity_pr_1::class.java)
@@ -42,15 +41,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentPr2)
     }
 
-     */
-
     fun startActivityPr3(view: View) {
         //06.06.2023
         val intentPr3 = Intent(this, Activity_pr_3::class.java)
         startActivity(intentPr3)
     }
 
-    /*
     fun startActivity16May(view: View) {
         // 16.05.2023
         val intent16May = Intent(this, Activity_16may::class.java)
@@ -69,5 +65,16 @@ class MainActivity : AppCompatActivity() {
         val intent30May = Intent(this, Activity_30may::class.java)
         startActivity(intent30May)
     }
-    */
+
+    fun startActivity06June1(view: View) {
+        //08.06.2023
+        val intent06June1 = Intent(this, Activity_06june_1::class.java)
+        startActivity(intent06June1)
+    }
+
+    fun startActivity06June2(view: View) {
+        //09.06.2023
+        val intent06June2 = Intent(this, ActivitySpinner_06june_2::class.java)
+        startActivity(intent06June2)
+    }
 }
