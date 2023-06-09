@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kolokolnikov_android_studio_second_course.databinding.CharacterItem30mayBinding
 
-class CharacterAdapter_06june1: RecyclerView.Adapter<CharacterAdapter_06june1.CharacterHolder>() {
+class CharacterAdapter_06june_1: RecyclerView.Adapter<CharacterAdapter_06june_1.CharacterHolder>() {
 
     val characters = ArrayList<Character_06june_1>()
 

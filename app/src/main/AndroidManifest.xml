@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Kolokolnikov_Android_Studio_second_course"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityResourses_06june_3"
+            android:exported="false" />
+        <activity
             android:name=".ActivitySpinner_06june_2"
             android:exported="false" />
         <activity

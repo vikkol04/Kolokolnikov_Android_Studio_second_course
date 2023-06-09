@@ -3,7 +3,6 @@ package com.example.kolokolnikov_android_studio_second_course
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.GridLayoutManager
@@ -12,7 +11,7 @@ import com.example.kolokolnikov_android_studio_second_course.databinding.Activit
 
 class Activity_06june_1 : AppCompatActivity() {
     lateinit var binding06june1: Activity06june1Binding
-    private val adapter = CharacterAdapter_06june1()
+    private val adapter = CharacterAdapter_06june_1()
     private var launcher: ActivityResultLauncher<Intent>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {

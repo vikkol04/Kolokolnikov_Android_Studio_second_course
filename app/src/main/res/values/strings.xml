@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Kolokolnikov_Android_Studio_second_course</string>
+<string name="app_name">Kolokolnikov_Android_Studio_second_course</string>
+<string name="text_view_default">Button has not been clicked yet</string>
+<string name="text_view_button_clicked">Button has been clicked</string>
 </resources>

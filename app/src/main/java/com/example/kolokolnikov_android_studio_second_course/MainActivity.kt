@@ -72,9 +72,15 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent06June1)
     }
 
-    fun startActivity06June2(view: View) {
+    fun startActivitySpinner06June2(view: View) {
         //09.06.2023
         val intent06June2 = Intent(this, ActivitySpinner_06june_2::class.java)
         startActivity(intent06June2)
+    }
+
+    fun startActivityResourses06June3(view: View) {
+        //09.06.2023
+        val intent06June3 = Intent(this, ActivityResourses_06june_3::class.java)
+        startActivity(intent06June3)
     }
 }
