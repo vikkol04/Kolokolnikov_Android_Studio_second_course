@@ -83,4 +83,10 @@ class MainActivity : AppCompatActivity() {
         val intent06June3 = Intent(this, ActivityResourses_06june_3::class.java)
         startActivity(intent06June3)
     }
+
+    fun startActivityFirstLw(view: View) {
+        //13.06.2023
+        val intentLw = Intent(this, ActivityFirst_lw::class.java)
+        startActivity(intentLw)
+    }
 }
